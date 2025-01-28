@@ -12,7 +12,7 @@
 	<artifactId>location-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>place-service</name>
-	<description>MSSC Place Service</description>
+	<description>MSSC Location Service</description>
 	<url/>
 	<licenses>
 		<license/>
