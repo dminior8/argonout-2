@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>pl.dminior8</groupId>
-	<artifactId>place-service</artifactId>
+	<artifactId>location-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>place-service</name>
 	<description>MSSC Place Service</description>
