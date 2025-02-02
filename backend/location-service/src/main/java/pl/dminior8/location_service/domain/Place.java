@@ -13,8 +13,8 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder(toBuilder = true)
 @Entity
-@Builder
 public class Place {
 
     @Id

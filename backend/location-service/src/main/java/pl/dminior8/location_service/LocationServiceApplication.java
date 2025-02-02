@@ -1,4 +1,4 @@
-package pl.dminior8.place_service;
+package pl.dminior8.location_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

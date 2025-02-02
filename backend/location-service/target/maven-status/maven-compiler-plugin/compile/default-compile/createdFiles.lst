@@ -1,0 +1,8 @@
+pl\dminior8\location_service\LocationServiceApplication.class
+pl\dminior8\location_service\domain\Place$PlaceBuilder.class
+pl\dminior8\location_service\repository\PlaceRepository.class
+pl\dminior8\location_service\domain\Place.class
+pl\dminior8\location_service\web\controller\PlaceController.class
+pl\dminior8\location_service\web\model\PlaceDTO.class
+pl\dminior8\location_service\bootstrap\PlaceLoader.class
+pl\dminior8\location_service\web\model\PlaceDTO$PlaceDTOBuilder.class
