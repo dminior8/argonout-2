@@ -37,11 +37,7 @@ class PlaceControllerTest {
 
     @Test
     void setPlace() throws Exception {
-        PlaceDTO placeDTO = new PlaceDTO();
-        placeDTO.setName("Test Place"); // Ustaw prawidłową nazwę
-        placeDTO.setLatitude(52.0); // Ustaw prawidłową szerokość geograficzną
-        placeDTO.setLongitude(21.0); // Ustaw prawidłową długość geograficzną
-        String placeDtoJson = objectMapper.writeValueAsString(placeDTO);
+        String placeDtoJson = objectMapper.writeValueAsString(getValidDTO());
 
         mockMvc.perform(post("/api/v1/places")
                         .contentType(MediaType.APPLICATION_JSON)
@@ -51,11 +47,7 @@ class PlaceControllerTest {
 
     @Test
     void editPlace() throws Exception {
-        PlaceDTO placeDTO = new PlaceDTO();
-        placeDTO.setName("Test Place"); // Ustaw prawidłową nazwę
-        placeDTO.setLatitude(52.0); // Ustaw prawidłową szerokość geograficzną
-        placeDTO.setLongitude(21.0); // Ustaw prawidłową długość geograficzną
-        String placeDtoJson = objectMapper.writeValueAsString(placeDTO);
+        String placeDtoJson = objectMapper.writeValueAsString(getValidDTO());
 
         mockMvc.perform(put("/api/v1/places/" + UUID.randomUUID().toString())
                         .contentType(MediaType.APPLICATION_JSON)
@@ -68,5 +60,13 @@ class PlaceControllerTest {
         mockMvc.perform(delete("/api/v1/places/" + UUID.randomUUID().toString())
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
+    }
+
+    private PlaceDTO getValidDTO(){
+        return PlaceDTO.builder()
+                .name("Test Place")
+                .latitude(52.0)
+                .longitude(21.0)
+                .build();
     }
 }

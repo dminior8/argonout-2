@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="pl.dminior8.location_service.LocationServiceApplicationTests" time="4.967" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="pl.dminior8.location_service.web.controller.UserControllerTest" time="0.517" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -66,10 +66,10 @@
     <property name="java.class.version" value="65.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[place-service] "/>
   </properties>
-  <testcase name="contextLoads" classname="pl.dminior8.location_service.LocationServiceApplicationTests" time="0.899">
-    <system-out><![CDATA[00:01:07.775 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [pl.dminior8.location_service.LocationServiceApplicationTests]: LocationServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-00:01:07.880 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration pl.dminior8.location_service.LocationServiceApplication for test class pl.dminior8.location_service.LocationServiceApplicationTests
-00:01:08.051 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+  <testcase name="editUserById" classname="pl.dminior8.location_service.web.controller.UserControllerTest" time="0.035">
+    <system-out><![CDATA[2025-02-03T00:01:13.807+01:00  INFO 17332 --- [place-service] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [pl.dminior8.location_service.web.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-03T00:01:13.825+01:00  INFO 17332 --- [place-service] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration pl.dminior8.location_service.LocationServiceApplication for test class pl.dminior8.location_service.web.controller.UserControllerTest
+2025-02-03T00:01:13.830+01:00  INFO 17332 --- [place-service] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -80,16 +80,15 @@
 
  :: Spring Boot ::                (v3.4.2)
 
-2025-02-03T00:01:08.314+01:00  INFO 17332 --- [place-service] [           main] p.d.l.LocationServiceApplicationTests    : Starting LocationServiceApplicationTests using Java 21.0.2 with PID 17332 (started by dmini in C:\Daniel\IT\Nauka\Mikroserwisy\argonout-2\backend\location-service)
-2025-02-03T00:01:08.316+01:00  INFO 17332 --- [place-service] [           main] p.d.l.LocationServiceApplicationTests    : No active profile set, falling back to 1 default profile: "default"
-2025-02-03T00:01:11.481+01:00  INFO 17332 --- [place-service] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-02-03T00:01:11.556+01:00  INFO 17332 --- [place-service] [           main] p.d.l.LocationServiceApplicationTests    : Started LocationServiceApplicationTests in 3.518 seconds (process running for 4.725)
+2025-02-03T00:01:13.860+01:00  INFO 17332 --- [place-service] [           main] p.d.l.web.controller.UserControllerTest  : Starting UserControllerTest using Java 21.0.2 with PID 17332 (started by dmini in C:\Daniel\IT\Nauka\Mikroserwisy\argonout-2\backend\location-service)
+2025-02-03T00:01:13.860+01:00  INFO 17332 --- [place-service] [           main] p.d.l.web.controller.UserControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-02-03T00:01:14.246+01:00  INFO 17332 --- [place-service] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-02-03T00:01:14.246+01:00  INFO 17332 --- [place-service] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-03T00:01:14.247+01:00  INFO 17332 --- [place-service] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-02-03T00:01:14.253+01:00  INFO 17332 --- [place-service] [           main] p.d.l.web.controller.UserControllerTest  : Started UserControllerTest in 0.423 seconds (process running for 7.421)
 ]]></system-out>
-    <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
-WARNING: A Java agent has been loaded dynamically (C:\Users\dmini\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.11\byte-buddy-agent-1.15.11.jar)
-WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
-WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
-WARNING: Dynamic loading of agents will be disallowed by default in a future release
-]]></system-err>
   </testcase>
+  <testcase name="getUserById" classname="pl.dminior8.location_service.web.controller.UserControllerTest" time="0.009"/>
+  <testcase name="deleteUserById" classname="pl.dminior8.location_service.web.controller.UserControllerTest" time="0.005"/>
+  <testcase name="setUser" classname="pl.dminior8.location_service.web.controller.UserControllerTest" time="0.01"/>
 </testsuite>
