@@ -28,29 +28,25 @@ public class PlaceController {
     @GetMapping("/{placeId}")
     public ResponseEntity<PlaceDTO> getPlaceById(@NotNull @PathVariable UUID placeId) {
         PlaceDTO placeDTO = placeService.findById(placeId);
-        //return ResponseEntity.ok().body(mapService.getPlaceByRouteId(routeId));
-        //TODO: Implementation
         return ResponseEntity.ok().body(placeDTO);
     }
 
     @PostMapping
     public ResponseEntity setPlace(@Valid @NonNull @RequestBody PlaceDTO placeDTO) {
         placeService.setPlace(placeDTO);
-//        mapService.setLocation(placeWithRouteDTO);
-//        return ResponseEntity.ok().body(new MessageResponse("Place edited successfully"));
-        //TODO: Implementation
-        return ResponseEntity.ok().body("");
+            return ResponseEntity.status(HttpStatus.CREATED).body(placeDTO);
+//        }else{
+//            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(placeDTO);
+//        }
     }
 
     @PutMapping("/{placeId}")
     public ResponseEntity editPlace(@NotNull @PathVariable UUID placeId, @Valid @RequestBody PlaceDTO placeDTO) {
         placeService.editById(placeId, placeDTO);
-//        if(place != null){
-//            return ResponseEntity.ok().body(new MessageResponse("Place edited successfully"));
+            return ResponseEntity.status(HttpStatus.CREATED).body(placeDTO);
+//        }else{
+//            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(placeDTO);
 //        }
-//        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new MessageResponse("Error during place editing"));
-        //TODO: Implementation
-        return ResponseEntity.ok().body("");
     }
 
     @DeleteMapping("/{placeId}")

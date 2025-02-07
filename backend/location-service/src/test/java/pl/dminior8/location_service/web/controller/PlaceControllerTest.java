@@ -98,14 +98,14 @@ class PlaceControllerTest {
 
     @Test
     void setPlace() throws Exception {
+        given(placeRepository.save(any())).willReturn(Place.class);
         String placeDtoJson = objectMapper.writeValueAsString(placeDTO);
-
         ConstrainedFields fields = new ConstrainedFields(PlaceDTO.class);
 
         mockMvc.perform(post("/api/v1/places")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(placeDtoJson))
-                .andExpect(status().isOk()) // Możesz zmienić na isCreated(), jeśli to lepsze
+                .andExpect(status().isCreated())
                 .andDo(document("v1/place-new/",
                         requestFields(
                                 fields.withPath("id").ignored().type(UUID.class),
@@ -128,7 +128,7 @@ class PlaceControllerTest {
         mockMvc.perform(put("/api/v1/places/{placeId}", UUID.randomUUID().toString())
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(placeDtoJson))
-                .andExpect(status().isOk())
+                .andExpect(status().isCreated())
                 .andDo(document("v1/place-edit/", // Documentation for PUT request
                         pathParameters(
                                 parameterWithName("placeId").description("ID of the place to be updated")

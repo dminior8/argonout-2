@@ -1,4 +1,4 @@
-[source,plain,options="nowrap"]
+[source,json,options="nowrap"]
 ----
-
+{"id":null,"name":"Test Place","description":"Test Description","latitude":52.0,"longitude":21.0,"moreInfoLink":"https://www.google.com/","visited":false}
 ----
