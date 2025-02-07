@@ -5,7 +5,7 @@ import pl.dminior8.location_service.web.model.PlaceDTO;
 import java.util.UUID;
 
 public interface PlaceService {
-    PlaceDTO getById(UUID placeId);
+    PlaceDTO findById(UUID placeId);
 
     boolean setPlace(PlaceDTO placeDTO);
 

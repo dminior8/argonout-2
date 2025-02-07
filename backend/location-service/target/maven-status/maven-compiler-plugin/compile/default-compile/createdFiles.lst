@@ -3,6 +3,7 @@ pl\dminior8\location_service\domain\EStatus.class
 pl\dminior8\location_service\domain\Place$PlaceBuilder.class
 pl\dminior8\location_service\repository\PlaceRepository.class
 pl\dminior8\location_service\domain\Place.class
+pl\dminior8\location_service\mapper\PlaceMapper.class
 pl\dminior8\location_service\web\model\UserDTO.class
 pl\dminior8\location_service\service\UserService.class
 pl\dminior8\location_service\LocationServiceApplication.class
@@ -19,3 +20,4 @@ pl\dminior8\location_service\mapper\UserMapperImpl.class
 pl\dminior8\location_service\mapper\UserMapper.class
 pl\dminior8\location_service\repository\UserRepository.class
 pl\dminior8\location_service\web\model\PlaceDTO$PlaceDTOBuilder.class
+pl\dminior8\location_service\mapper\PlaceMapperImpl.class

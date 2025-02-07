@@ -1,0 +1,6 @@
+[source,bash]
+----
+$ curl 'http://localhost:8080/api/v1/places/dbeee6dc-3a3a-4022-88a0-5d5e3287d9e7' -i -X PUT \
+    -H 'Content-Type: application/json;charset=UTF-8' \
+    -d '{"id":null,"name":"Test Place","description":"Test Description","latitude":52.0,"longitude":21.0,"moreInfoLink":"https://www.google.com/","visited":false}'
+----
