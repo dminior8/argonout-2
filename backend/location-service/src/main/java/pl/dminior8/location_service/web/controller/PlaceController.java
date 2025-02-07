@@ -26,11 +26,11 @@ public class PlaceController {
     }
 
     @GetMapping("/{placeId}")
-    public ResponseEntity<List<PlaceDTO>> getPlacesByRouteId(@NotNull @PathVariable UUID placeId) {
-        PlaceDTO place = placeService.getById(placeId);
+    public ResponseEntity<PlaceDTO> getPlaceById(@NotNull @PathVariable UUID placeId) {
+        PlaceDTO placeDTO = placeService.findById(placeId);
         //return ResponseEntity.ok().body(mapService.getPlaceByRouteId(routeId));
         //TODO: Implementation
-        return ResponseEntity.ok().body(new ArrayList<PlaceDTO>());
+        return ResponseEntity.ok().body(placeDTO);
     }
 
     @PostMapping

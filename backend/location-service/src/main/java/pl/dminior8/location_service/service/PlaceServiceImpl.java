@@ -10,9 +10,16 @@ import java.util.UUID;
 @Slf4j
 public class PlaceServiceImpl implements PlaceService {
     @Override
-    public PlaceDTO getById(UUID placeId){
-        log.debug("Getting place by id...");
-        return null;
+    public PlaceDTO findById(UUID placeId){
+        log.debug("Getting place by id...${placeId}");
+        return new PlaceDTO(
+                placeId,
+                "Place",
+                "",
+                10.0,
+                10.0,
+                "",
+                false);
     }
 
     @Override

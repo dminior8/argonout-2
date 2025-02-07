@@ -1,0 +1,7 @@
+[source,http,options="nowrap"]
+----
+GET /api/v1/places/e1fc386c-e3f6-47c5-9cef-add18ead1120 HTTP/1.1
+Accept: application/json
+Host: localhost:8080
+
+----

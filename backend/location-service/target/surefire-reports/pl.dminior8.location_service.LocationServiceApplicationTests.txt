@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: pl.dminior8.location_service.LocationServiceApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.967 s -- in pl.dminior8.location_service.LocationServiceApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.267 s -- in pl.dminior8.location_service.LocationServiceApplicationTests

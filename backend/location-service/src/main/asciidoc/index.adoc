@@ -1,0 +1,98 @@
+= SFG Place Service Documentation
+Daniel Minior;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+
+This document provides an overview of the SFG Place Service API, demonstrating how to use Spring REST Docs with JUnit 5 for testing and documentation.
+
+== API Endpoints
+
+This section describes the available API endpoints, including request methods, example requests, and responses.
+
+=== Get Place by ID
+
+Retrieves a specific place by its unique ID.
+
+==== cURL Request
+[source,bash]
+include::{snippets}/v1/place-get/curl-request.adoc[]
+
+==== HTTP Request
+[source,http]
+include::{snippets}/v1/place-get/http-request.adoc[]
+
+==== HTTP Response
+[source,http]
+include::{snippets}/v1/place-get/http-response.adoc[]
+
+==== Response Body
+[source,json]
+include::{snippets}/v1/place-get/response-body.adoc[]
+
+==== Response Fields
+[cols="1,2,2,2", options="header"]
+|===
+| Path | Type | Description | Constraints
+include::{snippets}/v1/place-get/response-fields.adoc[]
+|===
+
+=== Create a New Place
+
+Creates a new place with the provided details.
+
+==== cURL Request
+[source,bash]
+include::{snippets}/v1/place-new/curl-request.adoc[]
+
+==== HTTP Request
+[source,http]
+include::{snippets}/v1/place-new/http-request.adoc[]
+
+==== HTTP Response
+[source,http]
+include::{snippets}/v1/place-new/http-response.adoc[]
+
+==== Request Fields
+[cols="1,2,2,2", options="header"]
+|===
+| Path | Type | Description | Constraints
+include::{snippets}/v1/place-new/request-fields.adoc[]
+|===
+
+=== Edit an Existing Place
+
+Updates the details of an existing place using its unique ID.
+
+==== cURL Request
+[source,bash]
+include::{snippets}/v1/place-edit/curl-request.adoc[]
+
+==== HTTP Request
+[source,http]
+include::{snippets}/v1/place-edit/http-request.adoc[]
+
+==== HTTP Response
+[source,http]
+include::{snippets}/v1/place-edit/http-response.adoc[]
+
+=== Delete a Place by ID
+
+Deletes a place using its unique ID.
+
+==== cURL Request
+[source,bash]
+include::{snippets}/v1/place-delete/curl-request.adoc[]
+
+==== HTTP Request
+[source,http]
+include::{snippets}/v1/place-delete/http-request.adoc[]
+
+==== HTTP Response
+[source,http]
+include::{snippets}/v1/place-delete/http-response.adoc[]
+
+== Summary
+
+This documentation provides an overview of the API endpoints, expected request formats, and response details for the SFG Place Service. Use the provided snippets for seamless integration and testing.
+
