@@ -1,0 +1,5 @@
+[source,bash]
+----
+$ http DELETE 'http://localhost:8080/api/v1/places/a18c3835-8862-4dcd-9381-8851955f517c' \
+    'Accept:application/json'
+----
