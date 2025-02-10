@@ -1,0 +1,93 @@
+= SFG Game Service Documentation
+Daniel Minior;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 3
+
+This document provides an overview of the SFG Game Service API endpoints and responses.
+
+== Adventure Mode Management Endpoints
+
+=== Initialize New Game
+Initializes a new game for specified route.
+
+==== Response
+[source,http]
+include::{snippets}/adventure_mode-init/http-response.adoc[]
+
+==== Response Body Example
+[source,text]
+include::{snippets}/adventure_mode-init/response-body.adoc[]
+
+==== cURL Request
+[source,bash]
+include::{snippets}/adventure_mode-init/curl-request.adoc[]
+
+==== HTTP Request
+[source,http]
+include::{snippets}/adventure_mode-init/http-request.adoc[]
+
+==== HTTP Response
+[source,http]
+include::{snippets}/adventure_mode-init/http-response.adoc[]
+
+==== Response Fields
+[cols="1,2,2", options="header"]
+|===
+| Path | Type | Description
+include::{snippets}/adventure_mode-init/response-fields.adoc[]
+|===
+
+=== Add Place to Game
+Adds a place to existing game with validation
+
+==== Path Parameters
+[cols="1,2,2", options="header"]
+|===
+| Path | Type | Description
+include::{snippets}/adventure_mode-add-place-success/response-fields.adoc[]
+|===
+
+==== Success Response
+[source,http]
+include::{snippets}/adventure_mode-add-place-success/http-response.adoc[]
+
+==== Error Responses
+[cols="1,3" options="header"]
+|===
+| Status | Description
+| 408 | Time limit exceeded
+| 404 | Game/Place not found
+| 403 | Place not in route
+| 409 | Duplicate place
+|===
+
+=== End Game
+Finalizes game and checks completion status
+
+==== Success Responses
+[source,http]
+include::{snippets}/adventure_mode-end-success/http-response.adoc[]
+
+
+==== Error Response
+[source,http]
+include::{snippets}/adventure_mode-end-game_not_found/http-response.adoc[]
+include::{snippets}/adventure_mode-end-incomplete/http-response.adoc[]
+
+=== Free Game Mode
+Add place without game constraints
+
+==== Success Response
+[source,http]
+include::{snippets}/free_mode-add-success/http-response.adoc[]
+
+==== Error Responses
+[cols="1,3"]
+|===
+| Status | Description
+| 404 | Place not found
+| 429 | Already visited today
+|===

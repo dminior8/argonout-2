@@ -3,6 +3,8 @@ Daniel Minior;
 :doctype: book
 :icons: font
 :source-highlighter: highlightjs
+:toc: left
+:toclevels: 3
 
 This document provides an overview of the SFG Place Service API, demonstrating how to use Spring REST Docs with JUnit 5 for testing and documentation.
 
