@@ -7,7 +7,7 @@ import pl.dminior8.location_service.web.model.PlaceDTO;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-02-11T00:37:08+0100",
+    date = "2025-02-16T00:51:11+0100",
     comments = "version: 1.6.3, compiler: javac, environment: Java 21.0.2 (Oracle Corporation)"
 )
 @Component

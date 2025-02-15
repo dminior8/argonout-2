@@ -1,6 +1,6 @@
 [source,http,options="nowrap"]
 ----
-PUT /api/v1/places/2e7d9cda-2f9a-4f4a-b29c-5048af28cf1f HTTP/1.1
+PUT /api/v1/places/c1c4aae7-15c4-424c-b3a1-03c67564fedf HTTP/1.1
 Content-Type: application/json;charset=UTF-8
 Content-Length: 154
 Host: localhost:8080

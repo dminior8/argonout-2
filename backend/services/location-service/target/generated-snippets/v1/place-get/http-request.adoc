@@ -1,6 +1,6 @@
 [source,http,options="nowrap"]
 ----
-GET /api/v1/places/927bca84-205d-40b4-9c52-d5bcbcb62df6 HTTP/1.1
+GET /api/v1/places/5b5fd18c-e288-43ea-9e4f-d93da6e0ab05 HTTP/1.1
 Accept: application/json
 Host: localhost:8080
 
