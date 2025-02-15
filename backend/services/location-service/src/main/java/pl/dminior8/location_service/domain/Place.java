@@ -18,8 +18,8 @@ import java.util.UUID;
 public class Place {
 
     @Id
-    @GeneratedValue(generator = "UUID", strategy = GenerationType.UUID)
-    @Column(length = 36, columnDefinition = "varchar", updatable = false, nullable = false)
+    @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(updatable = false, nullable = false)
     private UUID id;
 
     private String name;

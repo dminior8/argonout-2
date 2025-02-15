@@ -16,7 +16,7 @@ import java.util.UUID;
 @Entity
 public class Game {
     @Id
-    @GeneratedValue(generator = "UUID", strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.UUID)
     @Column(length = 36, columnDefinition = "varchar", updatable = false, nullable = false)
     private UUID id;
 
