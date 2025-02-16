@@ -1,8 +1,0 @@
-[source,http,options="nowrap"]
-----
-HTTP/1.1 429 Too Many Requests
-Content-Type: application/json
-Content-Length: 41
-
-{"message":"Place already visited today"}
-----

@@ -1,6 +1,0 @@
-        | message
-        | String
-        | Game ended - failed to visit all places
-        | 
-
-        |===

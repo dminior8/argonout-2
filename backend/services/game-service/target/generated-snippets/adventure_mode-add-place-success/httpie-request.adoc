@@ -1,5 +1,0 @@
-[source,bash]
-----
-$ http POST 'http://localhost:8080/api/v1/game/adventure/e850d03b-a6b9-4664-b5dd-078f541283dc/add-place/834aa6c2-0ea7-4e6d-9feb-8f12b103ad9d' \
-    'Content-Type:application/json;charset=UTF-8'
-----

@@ -1,8 +1,0 @@
-.+/api/v1/game/adventure/{gameId}/end+
-|===
-|Parameter|Description
-
-|`+gameId+`
-|ID of the game to end
-
-|===

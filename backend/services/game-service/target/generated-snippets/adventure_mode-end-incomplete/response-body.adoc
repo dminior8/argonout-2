@@ -1,4 +1,0 @@
-[source,json,options="nowrap"]
-----
-{"message":"Game ended - failed to visit all places"}
-----

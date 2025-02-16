@@ -1,5 +1,0 @@
-[source,bash]
-----
-$ curl 'http://localhost:8080/api/v1/game/adventure/fe202a52-adfd-4d42-8bc3-c7fad6240be6/end' -i -X POST \
-    -H 'Content-Type: application/json;charset=UTF-8'
-----

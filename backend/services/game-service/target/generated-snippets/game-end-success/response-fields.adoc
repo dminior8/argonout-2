@@ -1,6 +1,0 @@
-        | message
-        | String
-        | Game ended - all places collected
-        | 
-
-        |===

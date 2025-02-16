@@ -1,8 +1,0 @@
-.+/api/v1/game/adventure/init/{routeId}+
-|===
-|Parameter|Description
-
-|`+routeId+`
-|ID of the route to initialize game for
-
-|===

@@ -1,0 +1,9 @@
+[source,bash]
+----
+<<<<<<< HEAD
+$ http GET 'http://localhost:8080/api/v1/places/4d9c6c08-9caf-4a5c-acdf-868854beb395' \
+=======
+$ http GET 'http://localhost:8080/api/v1/places/94b8d2ea-33b6-4474-8b20-1d161bbc19de' \
+>>>>>>> c9789dc603b63d3034c7e95af8828196b586c165
+    'Accept:application/json'
+----

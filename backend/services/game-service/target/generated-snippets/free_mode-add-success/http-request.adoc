@@ -1,7 +1,0 @@
-[source,http,options="nowrap"]
-----
-POST /api/v1/game/free/add-place/f3c2309f-f487-4399-86a5-228b93f1c0f1 HTTP/1.1
-Content-Type: application/json;charset=UTF-8
-Host: localhost:8080
-
-----

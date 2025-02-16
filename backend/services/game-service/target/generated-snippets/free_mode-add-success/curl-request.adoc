@@ -1,5 +1,0 @@
-[source,bash]
-----
-$ curl 'http://localhost:8080/api/v1/game/free/add-place/f3c2309f-f487-4399-86a5-228b93f1c0f1' -i -X POST \
-    -H 'Content-Type: application/json;charset=UTF-8'
-----
