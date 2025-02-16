@@ -1,4 +1,4 @@
-CREATE TABLE place (
+CREATE TABLE IF NOT EXISTS place (
                        id UUID PRIMARY KEY, -- UUID is stored as a string
                        name VARCHAR(255) NOT NULL, -- Name of the place
                        description TEXT, -- Description of the place
