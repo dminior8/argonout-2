@@ -5,7 +5,7 @@ jobs:
   test-java:
     docker:
       - image: cimg/openjdk:21.0
-    working_directory: ~/project/backend/location-service
+    working_directory: ~/project/backend/services
     steps:
       - checkout:
           path: ~/project
@@ -17,7 +17,10 @@ jobs:
       - restore_cache:
           key: cache-{{ checksum "/tmp/CIRCLECI_CACHE_KEY" }}
       - run:
-          command: mvn verify
+          name: Run tests in multiple directories
+          command: |
+            cd location-service && mvn verify && \
+            cd ../game-service && mvn verify
       - store_test_results:
           path: target/surefire-reports
       - save_cache:

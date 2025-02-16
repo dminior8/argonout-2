@@ -1,5 +1,0 @@
-[source,bash]
-----
-$ curl 'http://localhost:8080/api/v1/places/e1fc386c-e3f6-47c5-9cef-add18ead1120' -i -X GET \
-    -H 'Accept: application/json'
-----

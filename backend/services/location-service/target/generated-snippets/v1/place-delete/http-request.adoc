@@ -1,0 +1,7 @@
+[source,http,options="nowrap"]
+----
+DELETE /api/v1/places/b9138756-4990-4f60-8512-17e3ec1d8152 HTTP/1.1
+Accept: application/json
+Host: localhost:8080
+
+----
