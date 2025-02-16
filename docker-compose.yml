@@ -1,11 +1,7 @@
 version: "3.8"
 services:
   postgres:
-<<<<<<< HEAD
-    image: postgres:latest
-=======
     image: postgres:17.3
->>>>>>> c9789dc603b63d3034c7e95af8828196b586c165
     container_name: local_postgres
     restart: always
     environment:
@@ -16,10 +12,6 @@ services:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
-<<<<<<< HEAD
       - ./backend/services/location-service/src/main/scripts/postgresql-init.sql:/docker-entrypoint-initdb.d/init.sql
-=======
-      - ./backend/services/location-service/postgresql-init.sql:/docker-entrypoint-initdb.d/init.sql
->>>>>>> c9789dc603b63d3034c7e95af8828196b586c165
 volumes:
   pgdata:
