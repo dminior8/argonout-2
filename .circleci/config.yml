@@ -13,7 +13,7 @@ jobs:
     working_directory: ~/project/backend/services
     steps:
       - checkout:
-          path: ~/
+          path: ~/project
       - run:
           name: Wait for PostgreSQL to be ready
           command: dockerize -wait tcp://localhost:5432 -timeout 30s
