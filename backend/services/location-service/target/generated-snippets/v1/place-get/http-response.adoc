@@ -1,0 +1,8 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 154
+
+{"id":null,"name":"Test Place","description":"Test Description","latitude":52.0,"longitude":21.0,"moreInfoLink":"https://www.google.com/","visited":false}
+----

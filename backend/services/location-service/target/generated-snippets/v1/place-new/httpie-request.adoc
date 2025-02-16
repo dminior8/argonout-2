@@ -1,0 +1,5 @@
+[source,bash]
+----
+$ echo '{"id":null,"name":"Test Place","description":"Test Description","latitude":52.0,"longitude":21.0,"moreInfoLink":"https://www.google.com/","visited":false}' | http POST 'http://localhost:8080/api/v1/places' \
+    'Content-Type:application/json;charset=UTF-8'
+----

@@ -1,0 +1,9 @@
+[source,http,options="nowrap"]
+----
+PUT /api/v1/places/c1c4aae7-15c4-424c-b3a1-03c67564fedf HTTP/1.1
+Content-Type: application/json;charset=UTF-8
+Content-Length: 154
+Host: localhost:8080
+
+{"id":null,"name":"Test Place","description":"Test Description","latitude":52.0,"longitude":21.0,"moreInfoLink":"https://www.google.com/","visited":false}
+----

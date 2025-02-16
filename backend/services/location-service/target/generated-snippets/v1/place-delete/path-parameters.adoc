@@ -1,0 +1,8 @@
+.+/api/v1/places/{placeId}+
+|===
+|Parameter|Description
+
+|`+placeId+`
+|ID of Place to delete
+
+|===
