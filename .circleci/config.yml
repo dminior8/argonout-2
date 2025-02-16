@@ -25,7 +25,7 @@ jobs:
           command: dockerize -wait tcp://localhost:5432 -timeout 30s
       - run:
           name: Initialize database
-          command: PGPASSWORD=root psql -h localhost -U postgres -f location-service/postgresql-init.sql
+          command: PGPASSWORD=root psql -h localhost -U postgres -f location-service/src/main/scripts/postgresql-init.sql
       - run:
           name: Calculate cache key
           command: |-
