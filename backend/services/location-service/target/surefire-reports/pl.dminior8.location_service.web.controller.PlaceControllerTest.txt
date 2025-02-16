@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: pl.dminior8.location_service.web.controller.PlaceControllerTest
--------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.475 s -- in pl.dminior8.location_service.web.controller.PlaceControllerTest
-=======
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.648 s -- in pl.dminior8.location_service.web.controller.PlaceControllerTest
->>>>>>> c9789dc603b63d3034c7e95af8828196b586c165
