@@ -1,0 +1,7 @@
+[source,http,options="nowrap"]
+----
+POST /api/v1/game/adventure/be57f23b-b020-4020-b3db-59bb6fa01180/end HTTP/1.1
+Content-Type: application/json;charset=UTF-8
+Host: localhost:8080
+
+----

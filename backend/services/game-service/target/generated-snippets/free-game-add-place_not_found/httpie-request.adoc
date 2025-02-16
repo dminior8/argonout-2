@@ -1,0 +1,5 @@
+[source,bash]
+----
+$ http POST 'http://localhost:8080/api/v1/game/free/add-place/2dd26cfe-c489-4211-975b-73423ed2ae16' \
+    'Content-Type:application/json;charset=UTF-8'
+----

@@ -1,0 +1,13 @@
+        | id
+        | class java.util.UUID
+        | UUID of the game
+
+        | routeId
+        | class java.util.UUID
+        | UUID of the route
+
+        | startTime
+        | class java.sql.Timestamp
+        | Timestamp when the game started
+
+        |===

@@ -1,0 +1,8 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 138
+
+{"id":"1d6e7749-e904-4153-9e57-cc7944cd845a","routeId":"5ec5ed5a-3155-4450-a978-0d5398872236","startTime":"2025-02-10T23:31:29.943+00:00"}
+----

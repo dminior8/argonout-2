@@ -1,0 +1,11 @@
+.+/api/v1/game/adventure/{gameId}/add-place/{placeId}+
+|===
+|Parameter|Description
+
+|`+gameId+`
+|ID of the game
+
+|`+placeId+`
+|ID of the place to add
+
+|===

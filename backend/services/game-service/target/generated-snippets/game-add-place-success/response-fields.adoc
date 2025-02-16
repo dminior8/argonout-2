@@ -1,0 +1,6 @@
+        | message
+        | String
+        | Place added successfully
+        | 
+
+        |===

@@ -1,0 +1,5 @@
+        | message
+        | String
+        | Game or place not found
+
+        |===

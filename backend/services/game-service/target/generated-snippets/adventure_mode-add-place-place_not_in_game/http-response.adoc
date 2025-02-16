@@ -1,0 +1,8 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 403 Forbidden
+Content-Type: application/json
+Content-Length: 41
+
+{"message":"Place not part of this game"}
+----
