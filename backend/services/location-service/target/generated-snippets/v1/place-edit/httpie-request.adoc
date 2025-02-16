@@ -1,5 +1,9 @@
 [source,bash]
 ----
+<<<<<<< HEAD
 $ echo '{"id":null,"name":"Test Place","description":"Test Description","latitude":52.0,"longitude":21.0,"moreInfoLink":"https://www.google.com/","visited":false}' | http PUT 'http://localhost:8080/api/v1/places/faa8d328-db80-42a7-acb5-584f0ceeb220' \
+=======
+$ echo '{"id":null,"name":"Test Place","description":"Test Description","latitude":52.0,"longitude":21.0,"moreInfoLink":"https://www.google.com/","visited":false}' | http PUT 'http://localhost:8080/api/v1/places/8aed0e7b-f6e3-48d0-959b-7b2e99304463' \
+>>>>>>> c9789dc603b63d3034c7e95af8828196b586c165
     'Content-Type:application/json;charset=UTF-8'
 ----
