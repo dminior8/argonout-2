@@ -1,5 +1,5 @@
 [source,bash]
 ----
-$ curl 'http://localhost:8080/api/v1/places/5b5fd18c-e288-43ea-9e4f-d93da6e0ab05' -i -X GET \
+$ curl 'http://localhost:8080/api/v1/places/94b8d2ea-33b6-4474-8b20-1d161bbc19de' -i -X GET \
     -H 'Accept: application/json'
 ----
