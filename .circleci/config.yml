@@ -18,8 +18,9 @@ jobs:
           key: cache-{{ checksum "/tmp/CIRCLECI_CACHE_KEY" }}
       - run:
           name: Run tests in multiple directories
-          command: cd location-service && mvn verify
-          command: cd game-service && mvn verify
+          command: |
+            cd location-service && mvn verify && \
+            cd ../game-service && mvn verify
       - store_test_results:
           path: target/surefire-reports
       - save_cache:
